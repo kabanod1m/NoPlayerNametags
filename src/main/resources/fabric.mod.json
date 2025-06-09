@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "noplayernametags",
+  "version": "${version}",
+  "name": "NoPlayerNametags",
+  "description": "Just disables player name tags when installed.",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/noplayernametags/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "org.winglessbirds.noplayernametags.client.NoplayernametagsClient"
+    ],
+    "main": [
+      "org.winglessbirds.noplayernametags.Noplayernametags"
+    ]
+  },
+  "mixins": [
+    "noplayernametags.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "${minecraft_version}"
+  }
+}
